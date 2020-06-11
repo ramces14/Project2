@@ -1,0 +1,344 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+body{
+    background-color: #E6E6E6;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img{
+    max-width: 95%;
+}
+
+h2{
+    padding: 10px 0;
+}
+
+hr{
+    max-width: 1600px;
+    border-top: 3px solid black;
+}
+.portfolio-p{
+    margin: 0 auto;
+    font-size: 23px;
+}
+
+.portfolio-h{
+    margin: 0 auto;
+    font-size: 24px;
+    padding: 20px 0;
+}
+
+.main-nav li,
+.left,
+.last li{
+    font-weight: bold;
+}
+
+#portfolio{
+    color: #2aa2e8;
+}
+/* ================================= 
+  Base Layout Styles
+==================================== */
+/* ---- Navigation ---- */
+
+.main-nav,
+.phone,
+.email,
+.last{
+    margin: 0 auto; 
+    list-style-type: none;
+    padding: 0px;
+    padding-right: 10px;
+}
+
+.main-nav a{
+    text-transform: uppercase;
+    margin: .4em 10px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    color: black;
+}
+
+.main-nav a:hover {
+	color: coral;
+}
+
+.my-name a,
+.main-nav a {
+  display: block; 
+  padding: 10px 15px;
+}
+
+/*---- Profile layout ----*/
+
+.profile{
+   padding: 2em 1em;
+
+}
+
+.profile-img{
+    padding-bottom: 20px;
+}
+
+.portfolio{
+    margin: 50px 0px;
+}
+
+.info{
+    font-size: 23px;
+    margin: 0
+}
+/* ---- Layout Containers ---- */
+.container{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+.box2{
+    background-color: whitesmoke;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border-bottom: 3px solid black;
+}
+
+.portfolio{
+    margin: 0 auto;
+    padding: 20px 5px 60px 5px;
+}
+
+/* ---- Skills ---- */
+
+.new-section{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skill-list{
+    list-style-type: none;
+    padding: 0;
+    font-size: 24px;
+}
+
+/* ---- Footer ---- */
+
+.contact{
+    font-size: 24px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.contact-p{
+    font-size: 22px;
+    margin: 0 60px;
+}
+
+.contact-info{
+    font-size: 22px;
+}
+
+.footer-info{
+    margin: 30px 0;
+}
+
+.last a{
+    text-transform: uppercase;
+    color: black;
+}
+
+.last a:hover{
+    color: coral;
+}
+
+.last li{
+    display: inline-block;
+    margin-right: 20px; 
+}
+
+.last li:not(:last-child){
+    display: none;
+}
+
+.left{
+    float: left;
+    margin: 0;
+}
+
+.last{
+    float:right;
+}
+
+.footer-nav{
+    padding: 20px 0 40px 10px;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+    hr{
+        width: 97%;
+    }
+
+    /* ---- Navigation ---- */
+
+    .container{
+        width: 97%;
+        margin: 0 auto;
+    }
+
+    .main-nav li{
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .main-nav a{
+        background-color: transparent;
+    }
+
+    /*---- Profile layout ----*/
+
+    .profile{
+        display: inline-block;
+    }
+    .info{
+        float: left;
+        text-align: left;
+        width: 50%;
+    }
+
+    .profile-img{
+        float: right;
+        width: 40%;
+    }
+
+    /* ---- Layout Containers ---- */
+
+    .portfolio{
+        float: left;  
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth,
+    .sixth{
+        width: 50%;
+    }
+
+    /* ---- Footer ---- */
+
+    .footer-nav{
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    .last li:nth-child(-n+4){
+        display: inline-block;
+    }
+
+    .last li:last-child{
+        display: none;
+    }
+
+    .contact-p{
+        font-size: 23px;
+
+    }
+
+    .left{
+        padding-left: 10px;
+    }
+    /* ---- Float clearfix ---- */
+        
+    .clearfix::after {
+        content: " ";
+        display: table;
+        clear: both;
+    }
+        
+}
+    
+@media (min-width: 1024px) {
+
+    hr{
+        width: 94%;
+    }
+
+    /* ---- Navigation ---- */
+
+    .container{
+        width: 94%;
+        margin: 0 auto;
+        max-width: 1600px; 
+    }
+    
+    .my-name{
+        float: left;
+        padding-left: 16px;
+    }
+    
+    .main-nav{
+        float: right;
+    }
+    
+    .main-nav li{
+        display: inline-block;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    /*---- Profile layout ----*/
+
+    .info{
+        font-size: 28px;
+        width: 50%;
+    }
+
+    /* ---- Layout Containers ---- */
+    .first,
+    .second,
+    .third{
+        width: 33.3%;
+    }
+
+    .fourth,
+    .fifth,
+    .sixth{
+        width: 33.3%;
+    }
+
+    /* ---- Footer ---- */
+
+    .footer-nav{
+        width: 98%;
+        margin: 20px auto;
+        max-width: 1600px;
+    }
+
+    .contact-p{
+        margin: 0 auto;
+        width: 45%;
+    }
+}
+ 
